@@ -45,11 +45,22 @@
             font-weight: bold;
             color: #d4af37;
             letter-spacing: 2px;
+            text-align: center;
+            flex: 1;
         }
 
         .nav-items {
             display: flex;
             gap: 1.8rem;
+            flex: 1;
+        }
+
+        .nav-items.left {
+            justify-content: flex-start;
+        }
+
+        .nav-items.right {
+            justify-content: flex-end;
         }
 
         .nav-items li {
@@ -154,10 +165,14 @@
 
     <!-- Navbar -->
     <nav>
-        <div class="logo">The Smelly Water Club</div>
-        <ul class="nav-items">
+        <ul class="nav-items left">
             <li><a href="#">New Arrivals</a></li>
             <li><a href="#">Perfumes</a></li>
+        </ul>
+
+        <div class="logo">The Smelly Water Club</div>
+
+        <ul class="nav-items right">
             <li><a href="#">Collections</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
